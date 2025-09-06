@@ -226,7 +226,7 @@ class PythonCompetenceAnalyzer:
             
             if functions == 0:
                 return 1.0 if try_blocks > 0 else 0.7
-            
+            # Learned that this ratio works better than absolute counts
             return min(1.0, try_blocks / functions + 0.3)
             
         except:
@@ -355,6 +355,7 @@ class PythonCompetenceAnalyzer:
     
     def analyze_code(self, code: str, student_level: Optional[CompetenceLevel] = None) -> CodeAnalysis:
         """Complete code analysis pipeline"""
+        # TODO: Add support for analyzing Jupyter notebook cells in future version
         
         # Basic syntax analysis
         syntax_correct, syntax_issues = self.analyze_syntax(code)

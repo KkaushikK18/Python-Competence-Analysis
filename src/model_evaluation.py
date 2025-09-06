@@ -45,6 +45,7 @@ class ModelEvaluator:
         self.results = []
         
         # Define model configurations
+        # NOTE: Can easily add more models to this list as they become available
         self.model_configs = {
             "codellama-13b": ModelConfig(
                 name="CodeLlama-13B-Instruct",
@@ -74,6 +75,7 @@ class ModelEvaluator:
         config = self.model_configs[model_key]
         
         logger.info(f"Loading {config.name}...")
+        # This can take a while on first run, but subsequent loads are cached
         
         try:
             # Load tokenizer
