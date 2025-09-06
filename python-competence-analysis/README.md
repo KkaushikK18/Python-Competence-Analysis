@@ -1,9 +1,9 @@
 # Python Screening Task 3: Evaluating Open Source Models for Student Competence Analysis
 
-**Submitted by:** [Your Name]  
-**Date:** [Submission Date]  
-**Email:** [Your Email]  
-**Repository:** [Your GitHub Repository URL]
+**Submitted by:** Kaushik Kumar  
+**Date:** 06-09-2025
+**Email:** kaushikk06703@gmail.com 
+**Repository:** https://github.com/KkaushikK18/Python-Competence-Analysis
 
 ---
 
@@ -11,7 +11,7 @@
 
 ```bash
 # Clone and setup
-git clone [your-repo-url]
+git clone https://github.com/KkaushikK18/Python-Competence-Analysis
 cd python-competence-analysis
 pip install -r requirements.txt
 
